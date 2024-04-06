@@ -21,15 +21,18 @@
     size: 30px;
     color: #FFA5BA;
     letter: 4%;
+    margin: 0;
 }
 
 .footer-text2 {
     font-family: "Titan One";
     font-weight: 400;
-    size: 58px;
+    font-size: xx-large;
     color: #D41443;
     letter: 6%;
     height: 66px;
+    margin-top: 0;
+    
 }
 
 .footer-texts {
