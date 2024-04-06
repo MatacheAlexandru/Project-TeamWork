@@ -1,3 +1,28 @@
-.footer {
-    background-color: orange;
+:root {
+    background-color: #FFF5F6;
+
+}
+
+.svglist-footer {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    justify-content: end;
+    padding-right: 16px;
+}
+
+.svg-footer svg {
+    width: 20px;
+    height: 20px;
+   
+}
+
+.svg-footer {
+    background-color: #FEA5BB;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
