@@ -71,19 +71,26 @@
 
 /* Stilizare Mobile */
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 320px) {
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+   
+  
+}
 
 .footer-text1 {
     display: block;
-    width: 200px;
+    width: 70%;
     text-align: left;
 }
 
+
 .footer-text2 {
     display: block;
-    width: 200px;
+    width: 70%;
     text-align: left;
-    margin-top: 0;
     letter-spacing: 2px;
 }
 
@@ -92,15 +99,16 @@
     flex-direction: column;
     text-align: right;
     align-content: flex-end;
-    margin-right: 0;
+    
 }
 
 .svglist-footer {
     display: flex;
-    gap: 35px;
+    gap: 15px;
     margin-bottom: 30px; 
     align-content: flex-end;
     justify-content: flex-end;
+    width: 60%;
 }
 
 .footer-rights {
@@ -108,22 +116,30 @@
     color: #907E82;
     font-weight: 700;
     font-size: 14px;
-    width: 35%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
+    
 }
 
 .footer-contact {
-    margin-bottom: 30px;
+    font-size: 5px;
+    overflow: visible;
+    display: flex;
+    width: 90%;
+    
 }
 }
 
 
 /* Stilizare tableta */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 321px) and (max-width:1199px) {
+.container {
+    width: 1199px;
+    margin: 0 auto;
+}
 .footer-text2 {
   
     margin-top: 12px;
@@ -174,7 +190,12 @@
 }
 }
 /*  Stilizare Desktop */
-@media screen and (min-width: 1158px) {
+
+@media screen and (min-width: 1200px) {
+.container {
+    width: 1200px;
+    margin: 0 auto ;
+}    
 .footer-text1 {
     margin-bottom: 16px;
     margin-top: 20px;
@@ -184,7 +205,7 @@
 
 .footer-text2 {
     margin-top: 0;
-    margin-bottom: auto;
+    margin-bottom: auto;.
     display: flex;
     width: auto;
 }
@@ -199,7 +220,5 @@
     gap: 20px;
     margin-top: 40px;
 }
-
-
 
 }
