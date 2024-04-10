@@ -74,7 +74,8 @@
 @media screen and (max-width: 320px) {
 
 .container {
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -108,7 +109,7 @@
  
 }
 
-.footer-rights {
+.footer-rights1 {
     font-family: "DM Sans";
     color: #907E82;
     font-weight: 700;
@@ -126,14 +127,23 @@
     align-content: flex-end;
     justify-content: flex-end;    
 }
+
+.footer-rights1 {
+    display: block;
+}
+
+.footer-rights {
+    display: none;
+}
 }
 
 
 /* Stilizare tableta */
 
-@media screen and (min-width: 321px) and (max-width:1199px) {
+@media screen and (min-width: 321px) and (max-width:768px) {
 .container {
-    width: 1199px;
+    max-width: 768px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -188,12 +198,17 @@
     width: 100%;
     color: #907E82;
 }
+
+.footer-rights1 {
+    display: none;
+}
 }
 /*  Stilizare Desktop */
 
 @media screen and (min-width: 1200px) {
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto ;
 } 
 
@@ -237,6 +252,7 @@
     align-items: center;
     align-content: center;
     width: 100%;
+    color: #907E82;
 }
 
 .footer-contact {
@@ -257,4 +273,14 @@
     align-items: center;
     align-content: center;
 }
+
+.footer-rights1 {
+    display: none;
+}
+
+.footer-text3 {
+    display: flex;
+    justify-content: center;
+}
+
 }
