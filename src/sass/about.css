@@ -23,6 +23,10 @@
   background-color: var(--backround-sec4-sec5-sec7-sec8-rozAlbit);
   width: auto;
 }
+.container {
+  margin: 0;
+  height: auto;
+}
 
 .cow-img {
   background: transparent;
@@ -40,7 +44,7 @@
   display: flex;
   flex-direction: column;
   background-image: url(../images/about-section-bg.png);
-  background-size: contain;
+  background-size: auto;
   background-position-y: center;
   background-repeat: no-repeat;
 }
@@ -102,7 +106,7 @@
   font-weight: 700;
   font-size: 14px;
   text-align: center;
-  color: #000;
+  color: var(--font-color-red);
   margin-top: 20px;
   padding-left: 37px;
 }
@@ -112,16 +116,17 @@
   height: 10px;
 }
 .read-more-btn:hover {
-  color: var(--font-color-red);
+  color: var(--font-color-white);
   cursor: pointer;
+  background-color: #d41443;
 }
 .read-more-btn:hover #svg-btn {
-  stroke: var(--font-color-red);
+  stroke: var(--font-color-white);
   cursor: pointer;
 }
 
 .read-more-btn svg {
-  stroke: #000;
+  stroke: #d41443;
 }
 
 /* Stilizare tableta 768px*/
@@ -163,7 +168,7 @@
     display: flex;
     flex-direction: row;
     background-image: url(../images/about-section-bg.png);
-    background-image: cover;
+    background-image: contain;
     background-repeat: no-repeat;
   }
   .paragrafs {
@@ -245,5 +250,27 @@
 }
 .modal p {
   color: red;
-  text-indent: 40px;
+  text-indent: 5px;
+  margin-bottom: 0;
+}
+.modal-svg-ice-cream {
+  width: 25px;
+  height: 25px;
+  animation: rotate 2s linear infinite;
+  background-color: transparent;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.about-modal-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: baseline;
 }
