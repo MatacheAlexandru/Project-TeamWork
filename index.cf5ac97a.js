@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){var e={openModalBtn:document.getElementById("data-modal-open"),closeModalBtn:document.getElementById("data-modal-close"),modal:document.getElementById("data-modal")};function d(){e.modal&&e.modal.classList.toggle("is-hidden-about")}e.openModalBtn&&e.closeModalBtn&&e.modal&&(e.openModalBtn.addEventListener("click",d),e.closeModalBtn.addEventListener("click",d))}));
+//# sourceMappingURL=index.cf5ac97a.js.map
